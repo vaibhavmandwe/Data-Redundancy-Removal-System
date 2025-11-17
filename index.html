@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Deduplication & Validation System</title>
+    <meta name="description" content="Add contacts with automatic duplicate detection" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="header">
+          <h1>Data Deduplication & Validation System</h1>
+          <p class="subtitle">Add contacts with automatic duplicate detection</p>
+        </div>
+
+        <div class="grid">
+          <div class="form-section">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Add New Contact</h2>
+                <p class="card-description">
+                  System will automatically check for duplicates
+                </p>
+              </div>
+              <div class="card-content">
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="+1234567890"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="btn-primary" id="submitBtn">
+                    Add Contact
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts-section">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Stored Contacts</h2>
+                <div class="card-description-wrapper">
+                  <span>All unique contacts in the database</span>
+                  <span class="badge" id="contactCount">0 entries</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <div id="loadingMessage" class="empty-state">Loading contacts...</div>
+                <div id="emptyMessage" class="empty-state" style="display: none;">
+                  No contacts yet. Add your first contact above!
+                </div>
+                <div id="contactsTable" style="display: none;">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Added</th>
+                      </tr>
+                    </thead>
+                    <tbody id="contactsBody">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
