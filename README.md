@@ -5,7 +5,7 @@ A simple static web application for managing contacts with automatic duplicate d
 🚀 Live Demo
 
 Our project is deployed and accessible here:
-👉 https://vaibhavmandwe.github.io/Data-Redundancy-Removal-System/
+👉 https://vaibhavmandwe.github.io/CodeAlpha_Data-Redundancy-Removal-System/
 
 ## Features
 
