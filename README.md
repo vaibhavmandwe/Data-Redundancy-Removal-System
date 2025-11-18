@@ -33,13 +33,13 @@ This project is ready for GitHub Pages deployment:
 
 ### Steps:
 
-1. Push all files to your GitHub repository: `CodeAlpha_Chatbot`
+1. Push all files to your GitHub repository: `Data-Redundancy-Removal-System`
 2. Go to repository Settings → Pages
 3. Under "Source", select main branch
 4. Select folder: `/` (root)
 5. Click Save
 
-Your site will be live at: `https://vaibhavmandwe.github.io/CodeAlpha_Chatbot/`
+Your site will be live at: ``
 
 ### What Gets Deployed
 
