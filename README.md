@@ -2,6 +2,11 @@
 
 A simple static web application for managing contacts with automatic duplicate detection.
 
+🚀 Live Demo
+
+Our project is deployed and accessible here:
+👉 https://vaibhavmandwe.github.io/Data-Redundancy-Removal-System/
+
 ## Features
 
 - Add contacts (name, email, phone)
